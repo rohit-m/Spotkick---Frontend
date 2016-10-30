@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:300,400" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- Other libs -->
+    <script src="js/libs/moment.min.js"></script>
+    <script src="js/libs/bootstrap-datetimepicker.js"></script>
+    <script src="js/libs/jquery.selectric.js"></script>
+    <!-- Spotkick styles -->
+    <link href="selectric.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- Spotkick JS -->
+    <script src="js/global.js"></script>
+</head>
+<body data-index="1">
+<div class="container">
+    <div class="row title text-center">
+        <div class="col-xs-12">
+            <div class="inner">
+                <h1>Spotkick</h1>
+                <h3 class="copytext desc">Lets get started</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel1 -panel" data-index="1">
+        <div class="row content">
+            <div class="col-sm-6 inner border-right">
+                <h3>1. Pick a date range</h3>
+                <div class="inner-content">
+                    <div class="date-group row">
+                        <div class='input-group col-sm-12'>
+                            <p class="headingtext">From</p>
+                            <input type='text' id="datetimepicker1" class="form-control"/>
+                        </div>
+                        <div class='input-group col-sm-12'>
+                            <p class="headingtext">To</p>
+                            <input type='text' id="datetimepicker2" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 inner">
+                <h3 class="">2. Choose a city</h3>
+                <p class="desc ">Find gigs in your favorite city</p>
+                <div class="inner-content">
+                    <div class="data-group">
+                        <select name="city" id="choose-city">
+                            <option>London</option>
+                            <option>Birmingham</option>
+                            <option>Cardiff</option>
+                        </select>
+                    </div>
+                    <button class="btn -continue">
+                        <div class="outer -yellow headingtext">
+                            Continue
+                            <div class="inner">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="panel2 -panel inactive" data-index="2">
+        <div class="row content">
+            <div class="col-sm-6 inner border-right">
+                <h3>Progress</h3>
+                <div class="inner-content">
+                    <p>I want to find gigs between <span class="headingtext">30/10/2016</span> and <span class="headingtext">05/11/2016</span>, in <span class="headingtext">London</span></p>
+
+                </div>
+            </div>
+            <div class="col-sm-6 inner">
+                <h3 class="">3. Pick a few artists</h3>
+                <p class="desc ">Artists playing in <span class="headingtext">London</span></p>
+                <div class="inner-content">
+                    <div class="data-group">
+                        <select name="city" id="choose-artist">
+                            <option>Akala</option>
+                            <option>Beyonce</option>
+                            <option>Chase & Status</option>
+                        </select>
+                    </div>
+                    <button class="btn -continue">
+                        <div class="outer -yellow headingtext">
+                            Continue
+                            <div class="inner">
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
